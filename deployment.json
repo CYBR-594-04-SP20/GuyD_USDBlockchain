@@ -1,0 +1,85 @@
+{
+  "id": "/subscriptions/addbe35b-da13-4b9e-8c3d-a478de277b18/resourceGroups/DLT/providers/Microsoft.Resources/deployments/Microsoft.Blockchain_51b6779697814822b9bd6c85b8b2cd8c",
+  "name": "Microsoft.Blockchain_51b6779697814822b9bd6c85b8b2cd8c",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/addbe35b-da13-4b9e-8c3d-a478de277b18/resourcegroups/DLT/providers/Microsoft.Blockchain/blockchainMembers/blockchain1",
+    "marketplaceItemId": "Microsoft.Blockchain"
+  },
+  "properties": {
+    "templateLink": {
+      "uri": "https://gallery.azure.com/artifact/20161101/Microsoft.Blockchain.1.2.5-preview/DeploymentTemplates/CreateBlockchainMemberV6.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "templateHash": "15534871303936832812",
+    "parameters": {
+      "name": {
+        "type": "String",
+        "value": "blockchain1"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus2"
+      },
+      "protocol": {
+        "type": "String",
+        "value": "Quorum"
+      },
+      "consensus": {
+        "type": "String",
+        "value": "Default"
+      },
+      "validatorNodeSkuCapacity": {
+        "type": "Int",
+        "value": 2
+      },
+      "password": {
+        "type": "SecureString"
+      },
+      "consortium": {
+        "type": "String",
+        "value": "usd"
+      },
+      "sku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "skuName": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "consortiumManagementAccountPassword": {
+        "type": "SecureString"
+      },
+      "tags": {
+        "type": "Object",
+        "value": {
+          "usd": "1"
+        }
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-04-15T00:57:20.7587405Z",
+    "duration": "PT11.101734S",
+    "correlationId": "b4b84b43-13ac-4266-ae6c-3308c74a8bc1",
+    "providers": [
+      {
+        "namespace": "Microsoft.Blockchain",
+        "resourceTypes": [
+          {
+            "resourceType": "blockchainMembers",
+            "locations": [
+              "westus2"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "validationLevel": "Template"
+  }
+}
